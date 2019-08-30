@@ -1,0 +1,17 @@
+{        
+    "name": "Laid-back theme",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": ">=0.9.0-pre.1"
+    },
+    "publisher": "Akhremenka Victor",
+   "contributes": {
+        "themes": [
+            {
+                "label": "Laid Back Theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/LaidBackTheme.tmTheme"
+            }
+        ]
+    }
+}
