@@ -1,17 +1,27 @@
-{        
-    "name": "Laid-back theme",
-    "version": "0.0.1",
+{
+    "name": "laid-back-theme",
+    "displayName": "Laid theme",
+    "description": "black theme",
+    "version": "0.0.4",
     "engines": {
-        "vscode": ">=0.9.0-pre.1"
+        "vscode": "^1.37.0"
     },
-    "publisher": "Akhremenka Victor",
-   "contributes": {
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
         "themes": [
             {
                 "label": "Laid Back Theme",
                 "uiTheme": "vs-dark",
-                "path": "./themes/LaidBackTheme.tmTheme"
+                "path": "./themes/LaidBackTheme.json"
             }
         ]
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cassum777/Laid-back-theme.git"
+    },
+    "author": "Akhremenka Victor <cassum777@gmail.com>",
+    "publisher": "Akhremenka Victor"
 }
