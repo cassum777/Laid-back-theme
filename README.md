@@ -1,1 +1,1 @@
-Вark theme for VS Code
+Dark theme for VS Code
