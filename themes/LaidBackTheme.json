@@ -10,7 +10,10 @@
   "tokenColors": [
     {
       "name": "Comment",
-      "scope": ["comment", "punctuation.definition.comment"],
+      "scope": [
+        "comment",
+        "punctuation.definition.comment"
+      ],
       "settings": {
         "fontStyle": "italic",
         "foreground": "#8D9199B8"
@@ -19,14 +22,18 @@
     {
       "name": "Base types",
       "scope": [
+        "storage.type.js",
         "keyword.type.cs",
         "entity.name.type.class.cs",
         "storage.type.cs",
         "entity.name.type.interface.cs",
         "punctuation.definition.typeparameters",
-        "constant.language",
         "meta.brace.square.js",
-        "string.quoted.template.js"
+        "string.quoted.template.js",
+        "punctuation.separator.question-mark.cs",
+        "entity.name.tag.inline.any.html",
+        "keyword.other.var.cs",
+        "entity.name.type.type-parameter.cs"
       ],
       "settings": {
         "fontStyle": "italic",
@@ -38,7 +45,8 @@
       "scope": [
         "punctuation",
         "meta.brace.curly.litobj.js",
-        "meta.brace.curly.js"
+        "meta.brace.curly.js",
+        "variable.language.this"
       ],
       "settings": {
         "fontStyle": "italic",
@@ -48,11 +56,9 @@
     {
       "name": "Syntax",
       "scope": [
-        "storage.type.js",
         "storage.modifier",
         "keyword.other.await.cs",
-        "keyword.other.using.cs",
-        "variable.language.this"
+        "keyword.other.using.cs"
       ],
       "settings": {
         "foreground": "#797c9bca"
@@ -60,7 +66,10 @@
     },
     {
       "name": "Gets and sets",
-      "scope": ["keyword.other.get.cs", "keyword.other.set.cs"],
+      "scope": [
+        "keyword.other.get.cs",
+        "keyword.other.set.cs"
+      ],
       "settings": {
         "foreground": "#797c9bca"
       }
@@ -74,7 +83,8 @@
         "keyword.other.namespace.cs",
         "entity.name.tag.script.html",
         "entity.name.tag.template.html",
-        "entity.name.tag.style.html"
+        "entity.name.tag.style.html",
+        "keyword.other.new.cs"
       ],
       "settings": {
         "foreground": "#f1c778ca"
@@ -83,14 +93,16 @@
     {
       "name": "Methods",
       "scope": [
+        "keyword.other.typeof.cs",
         "entity.name.function",
         "punctuation.parenthesis",
         "punctuation.definition.parameters.end",
         "punctuation.definition.parameters.begin",
-        "meta.brace.round.js"
+        "meta.brace.round.js",
+        "keyword.other.nameof.cs"
       ],
       "settings": {
-        "foreground": "#79b683ca"
+        "foreground": "#2dc272"
       }
     },
     {
@@ -103,12 +115,12 @@
     {
       "name": "Operators",
       "scope": [
-        "keyword.operator.arrow.cs",
-        "keyword.operator.comparison.cs",
+        "keyword.operator",
+        "keyword.control.conditional.js",
         "keyword.control.flow.return.cs",
         "keyword.other.await.cs",
-        "keyword.control.trycatch",
-        "keyword.control.flow.js"
+        "keyword.control",
+        "keyword.operator.null-coalescing.cs"
       ],
       "settings": {
         "foreground": "#f0697bca"
@@ -116,9 +128,20 @@
     },
     {
       "name": "namespaces",
-      "scope": ["entity.name.type.namespace.cs"],
+      "scope": [
+        "entity.name.type.namespace.cs"
+      ],
       "settings": {
         "foreground": "#8D9199B8"
+      }
+    },
+    {
+      "name": "string",
+      "scope": [
+        "string.quoted.double.cs"
+      ],
+      "settings": {
+        "foreground": "#9ab4ed"
       }
     }
   ]
